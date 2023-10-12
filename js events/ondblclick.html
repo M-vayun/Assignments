@@ -1,0 +1,56 @@
+<html> 2px
+
+
+<head>
+	<title>change button color ondblclick</title>
+	<style>
+	.btn{
+		
+		margin: 50px 100px;
+		padding: 20px 100px;
+		background: #7d2ae8;
+		border: 2px solid #ffff;
+		border-radius: 8px;
+		box-shadow: 0 0 20px #ffff;
+		font-size: 22px;
+		text-align: center;
+	}
+	.btn:active{
+		transform:scale(0.96);
+	}
+	body{
+		
+		background: #0b061f;
+	}
+	.ba{
+		display: flex;
+		justify-content: center;
+		align-item: center;
+		
+	}
+		
+	
+	
+	
+	</style>
+
+</head>
+
+
+
+<body>
+	<h1 style="color:white">Change Button Color Ondblclick :</h1>
+	<div class="ba">
+	<button class="btn" id="button" ondblclick="changeColor(this)"style="color:white">BUTTON</button>
+	</div>
+	
+	<script>
+		function changeColor(button){
+			button.style.backgroundColor="green";
+		}
+	</script>
+
+</body>
+
+
+</html>

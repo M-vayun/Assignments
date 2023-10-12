@@ -1,0 +1,54 @@
+<html> 2px
+
+
+<head>
+	<title>change button color ondblclick</title>
+	<style>
+	.tbox{
+		
+		margin: 50px 100px;
+		padding: 20px 100px;
+		background: #ffff;
+		border: 2px solid #ffff;
+		border-radius: 8px;
+		box-shadow: 0 0 20px #ffff;
+		font-size: 22px;
+		text-align: left;
+	}
+	
+	body{
+		
+		background: #0b061f;
+	}
+	.ba{
+		display: flex;
+		justify-content: center;
+		align-item: center;
+		
+	}
+		
+	
+	
+	
+	</style>
+
+</head>
+
+
+
+<body>
+	<h1 style="color:white">Change Color OnFocus :</h1>
+	<div class="ba">
+	<input class="tbox" type="text" id="textbox" onfocus="changeColor(this)" placeholder="Click To Focus"> 
+	</div>
+	
+	<script>
+		function changeColor(textbox){
+			textbox.style.backgroundColor="yellow";
+		}
+	</script>
+
+</body>
+
+
+</html>

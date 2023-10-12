@@ -1,0 +1,59 @@
+<html> 2px
+
+
+<head>
+	<title>change button color OnFocus and Blur</title>
+	<style>
+	.tbox{
+		
+		margin: 50px 100px;
+		padding: 20px 100px;
+		background: #ffff;
+		border: 2px solid #ffff;
+		border-radius: 8px;
+		box-shadow: 0 0 20px #ffff;
+		font-size: 22px;
+		text-align: left;
+	}
+	
+	body{
+		
+		background: #0b061f;
+	}
+	.ba{
+		display: flex;
+		justify-content: center;
+		align-item: center;
+		
+	}
+		
+	
+	
+	
+	</style>
+
+</head>
+
+
+
+<body>
+	<h1 style="color:white">Change Color OnFocus And Convert Lower Case Letters To Upper Case Letters :</h1>
+	<div class="ba">
+	<input class="tbox" type="text" id="textbox" onfocus="changeColor(this)" onblur="changeText(this)" placeholder="Type Here"> 
+	</div>
+	
+	<script>
+		function changeColor(textbox){
+			textbox.style.backgroundColor="yellow";
+		}
+		
+		function changeText(input) {
+			input.value=input.value.toUpperCase();
+		}
+		
+	</script>
+
+</body>
+
+
+</html>
